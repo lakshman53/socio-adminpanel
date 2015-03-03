@@ -10,8 +10,8 @@ add
 
 
 
-
-
+has-props
+has-prop-mods
 
 
 
@@ -54,13 +54,6 @@ file
 
 add
 
-defaults-pl_PL.js
-file
-
-
-
-add
-
 defaults-pt_BR.js
 file
 
@@ -68,7 +61,7 @@ file
 
 add
 
-defaults-cz-CZ.min.js
+defaults-pl_PL.js
 file
 
 
@@ -76,6 +69,13 @@ file
 add
 
 defaults-it_IT.js
+file
+
+
+
+add
+
+defaults-cz-CZ.min.js
 file
 
 

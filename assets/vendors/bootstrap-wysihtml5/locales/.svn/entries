@@ -10,8 +10,8 @@ add
 
 
 
-
-
+has-props
+has-prop-mods
 
 
 
@@ -47,14 +47,14 @@ file
 
 add
 
-bootstrap-wysihtml5.lt-LT.js
+bootstrap-wysihtml5.nb-NB.js
 file
 
 
 
 add
 
-bootstrap-wysihtml5.nb-NB.js
+bootstrap-wysihtml5.lt-LT.js
 file
 
 
@@ -96,13 +96,6 @@ file
 
 add
 
-bootstrap-wysihtml5.tr-TR.js
-file
-
-
-
-add
-
 bootstrap-wysihtml5.ua-UA.js
 file
 
@@ -110,7 +103,7 @@ file
 
 add
 
-bootstrap-wysihtml5.mo-MD.js
+bootstrap-wysihtml5.tr-TR.js
 file
 
 
@@ -118,6 +111,13 @@ file
 add
 
 bootstrap-wysihtml5.zh-TW.js
+file
+
+
+
+add
+
+bootstrap-wysihtml5.mo-MD.js
 file
 
 

@@ -10,8 +10,8 @@ add
 
 
 
-
-
+has-props
+has-prop-mods
 
 
 
@@ -26,15 +26,15 @@ add
 
 66176daa-0519-b781-f796-ce57b7db7bff
 
-sample
-dir
+editor_ie7.css
+file
 
 
 
 add
 
-editor_ie7.css
-file
+sample
+dir
 
 
 
@@ -75,14 +75,14 @@ file
 
 add
 
-editor_ie.css
+dialog_ie7.css
 file
 
 
 
 add
 
-dialog_ie7.css
+editor_ie.css
 file
 
 
