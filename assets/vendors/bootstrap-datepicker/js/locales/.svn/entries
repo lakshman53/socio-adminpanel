@@ -145,7 +145,7 @@ file
 
 add
 
-bootstrap-datepicker.kk.js
+bootstrap-datepicker.ua.js
 file
 
 
@@ -159,14 +159,7 @@ file
 
 add
 
-bootstrap-datepicker.ua.js
-file
-
-
-
-add
-
-bootstrap-datepicker.es.js
+bootstrap-datepicker.kk.js
 file
 
 
@@ -180,7 +173,7 @@ file
 
 add
 
-bootstrap-datepicker.cy.js
+bootstrap-datepicker.es.js
 file
 
 
@@ -194,7 +187,7 @@ file
 
 add
 
-bootstrap-datepicker.no.js
+bootstrap-datepicker.cy.js
 file
 
 
@@ -202,6 +195,13 @@ file
 add
 
 bootstrap-datepicker.hu.js
+file
+
+
+
+add
+
+bootstrap-datepicker.no.js
 file
 
 

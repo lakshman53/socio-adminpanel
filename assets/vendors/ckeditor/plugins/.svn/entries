@@ -61,14 +61,14 @@ dir
 
 add
 
-pastefromword
+wsc
 dir
 
 
 
 add
 
-wsc
+pastefromword
 dir
 
 
@@ -96,14 +96,14 @@ add
 has-props
 has-prop-mods
 
-clipboard
+dialog
 dir
 
 
 
 add
 
-dialog
+clipboard
 dir
 
 

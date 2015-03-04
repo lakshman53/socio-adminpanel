@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>Store Management</title>
+<head><title>Central Administration</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,7 @@
     <link type="text/css" rel="stylesheet" href="assets/css/system.css">
     <link type="text/css" rel="stylesheet" href="assets/css/system-responsive.css">
 </head>
-<body class="sidebar-color-grey font-open-sans"><!--Modal Default-->
+<body class="sidebar-color-grey layout-sidebar-collapsed font-open-sans"><!--Modal Default-->
 <div id="source-modal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -36,106 +36,8 @@
     </div>
 </div>
 <div class="fluid"><!--BEGIN TEMPLATE SETTING-->
-    <div class="hidden-xs hidden-sm">
-        <div id="template-setting">
-            <div class="content-template-setting">
-                <button id="save-setting" class="btn btn-success btn-sm pull-right">Save Change</button>
-                <div class="mbm clearfix"></div>
-                <h5 class="pull-left">Header theme</h5>
-
-                <div class="pull-right">
-                    <div id="setting-header-dark" data-on="info" data-off="default" data-on-label="Dark"
-                         data-off-label="Light" class="make-switch switch-small"><input type="checkbox" class="switch"/>
-                    </div>
-                </div>
-                <div class="mbm clearfix"></div>
-                <h5>Sidebar Colors</h5>
-                <ul class="sidebar-color list-unstyled list-inline">
-                    <li data-style="grey" class="grey-blue active"></li>
-                    <li data-style="default" class="grey"></li>
-                    <li data-style="blue" class="blue"></li>
-                    <li data-style="green" class="green"></li>
-                    <li data-style="orange" class="orange"></li>
-                    <li data-style="white" class="white"></li>
-                </ul>
-                <div class="mbm clearfix"></div>
-                <h5 class="pull-left">Font</h5>
-
-                <div class="pull-right"><select id="font-select" class="mts">
-                    <option value="source-sans-pro">Source Sans Pro</option>
-                    <option value="open-sans">Open Sans</option>
-                    <option value="roboto">Roboto</option>
-                    <option value="lato">Lato</option>
-                    <option value="lora">Lora</option>
-                    <option value="helvetica">Helvetica Neue</option>
-                </select></div>
-                <div class="mbm clearfix"></div>
-                <hr/>
-                <h5 class="pull-left">Header Fixed</h5>
-
-                <div class="pull-right">
-                    <div id="setting-header-fixed" data-on="success" data-off="default"
-                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
-                </div>
-                <div class="mbm clearfix"></div>
-                <h5 class="pull-left">Sidebar Collapsed</h5>
-
-                <div class="pull-right">
-                    <div id="setting-sidebar-collapsed" data-on="success" data-off="default"
-                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
-                </div>
-                <div class="mbm clearfix"></div>
-                <h5 class="pull-left">Sidebar Show/Hide</h5>
-
-                <div class="pull-right">
-                    <div id="setting-sidebar-hide" data-on="success" data-off="default"
-                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
-                </div>
-                <div class="mbm clearfix"></div>
-                <h5 class="pull-left">Sidebar Fixed</h5>
-
-                <div class="pull-right">
-                    <div id="setting-sidebar-fixed" data-on="success" data-off="default"
-                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
-                </div>
-                <div class="mbm clearfix"></div>
-                <h5 class="pull-left">Toggle Button<i data-hover="tooltip" data-placement="top"
-                                                      title="Switch it then click toogle button on topbar"
-                                                      class="fa fa-info-circle mls"></i></h5>
-
-                <div class="pull-right">
-                    <div id="setting-toggle-status" data-on="success" data-off="default" data-on-label="Hide"
-                         data-off-label="Mini" class="make-switch switch-small"><input type="checkbox" class="switch"/>
-                    </div>
-                </div>
-                <div class="mbm clearfix"></div>
-                <hr/>
-                <h5 class="pull-left">Logo mode</h5>
-
-                <div class="pull-right">
-                    <div id="setting-logo-status" data-on="success" data-off="default" data-on-label="Aside"
-                         data-off-label="Top" class="make-switch switch-small"><input type="checkbox" class="switch"/>
-                    </div>
-                </div>
-                <div class="mbm clearfix"></div>
-                <h5 class="pull-left">Layout Boxed</h5>
-
-                <div class="pull-right">
-                    <div id="setting-layout-boxed" data-on="success" data-off="default"
-                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
-                </div>
-                <div class="mbm clearfix"></div>
-                <h5 class="pull-left">Menu Horizontal</h5>
-
-                <div class="pull-right">
-                    <div id="setting-horizontal-menu" data-on="success" data-off="default"
-                         class="make-switch switch-small"><input type="checkbox" class="switch"/></div>
-                </div>
-                <div class="mbm clearfix"></div>
-            </div>
-        </div>
-    </div>
-    <!--END TEMPLATE SETTING--><!--BEGIN TOPBAR-->
+<!--END TEMPLATE SETTING-->
+    <!--BEGIN TOPBAR-->
     <div class="page-header-topbar">
         <nav id="topbar" role="navigation" class="navbar navbar-default container pln prn">
             <div class="container-fluid pln prn">
@@ -442,7 +344,7 @@
             <div class="page-content"><!--BEGIN TITLE & BREADCRUMB PAGE-->
                 <div class="page-title-breadcrumb">
                     <div class="page-header pull-left">
-                        <div class="page-title">Store Management</div>
+                        <div class="page-title">Central Administration</div>
                     </div>
                     <ol class="breadcrumb page-breadcrumb hidden-xs hidden">
                         <li><i class="fa fa-home"></i>&nbsp;<a href="index.html">Home</a>&nbsp;&nbsp;<i
@@ -460,6 +362,315 @@
                 <div class="box-content"><!--BEGIN CONTENT-->
                     <div class="content">
                         <div class="row">
+                              <div class="form-group">
+           
+            
+                <div class="col-md-10 col-md-offset-1 input-group">
+    <input type="text" class="form-control input-lg" placeholder="Search Store / Employee">
+    <span class="input-group-btn">
+        <button type="button" class="btn btn-success btn-lg"> Search!! </button>
+    </span>
+    
+</div>
+
+
+            
+        </div> 
+        
+        <div class="search-result mtl col-md-10 col-md-offset-1">
+                                                    <div class="row">
+                                                        <div class="tabbable-line">
+                                                            <ul id="myTab" class="nav nav-tabs">
+                                                                <li class="active"><a href="#web"
+                                                                                      data-toggle="tab">Web<span
+                                                                        class="badge badge-warning mls">8</span></a>
+                                                                </li>
+                                                                <li><a href="#user" data-toggle="tab">User<span
+                                                                        class="badge badge-info mls">14</span></a></li>
+                                                            </ul>
+                                                            <div id="myTabContent" class="tab-content">
+                                                                <div id="web" class="tab-pane fade in active">
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item"><h4><a href="#"
+                                                                                                           class="mbm">Loki
+                                                                            - Admin Bootstrap Template</a></h4>
+
+                                                                            <p class="cat mbs"><a href="#">Html</a> / <a
+                                                                                    href="#">Admin</a> / <a href="#">New
+                                                                                item</a></p>
+
+                                                                            <p class="mbm"> Lorem ipsum dolor sit amet,
+                                                                                consectetur adipisicing elit. Alias hic
+                                                                                optio autem obcaecati asperiores at
+                                                                                vero, atque doloremque veniam quis
+                                                                                voluptatum ipsam nulla incidunt
+                                                                                temporibus fugit possimus expedita
+                                                                                earum! Maxime.</p>
+
+                                                                            <p><span>Tag:</span><span
+                                                                                    class="label label-default mls">admin</span><span
+                                                                                    class="label label-info mls">bootstrap</span>
+                                                                            </p></li>
+                                                                        <li class="list-group-item"><h4><a href="#"
+                                                                                                           class="mbm">150+
+                                                                            Components Page</a></h4>
+
+                                                                            <p class="cat mbs"><a href="#">Html</a> / <a
+                                                                                    href="#">Admin</a></p>
+
+                                                                            <p class="mbm"> Lorem ipsum dolor sit amet,
+                                                                                consectetur adipisicing elit. Odit
+                                                                                possimus enim repellendus vero, quam,
+                                                                                neque repellat culpa inventore
+                                                                                dignissimos laborum asperiores odio
+                                                                                magni fugit similique doloribus. Fugit
+                                                                                asperiores adipisci tempora.</p>
+
+                                                                            <p><span>Tag:</span><span
+                                                                                    class="label label-default mls">responsive</span><span
+                                                                                    class="label label-default mls">admin</span>
+                                                                            </p></li>
+                                                                        <li class="list-group-item"><h4><a href="#"
+                                                                                                           class="mbm">Standard
+                                                                            code - Html/Css/Javascript</a></h4>
+
+                                                                            <p class="cat mbs"><a href="#">Html</a> / <a
+                                                                                    href="#">Admin</a></p>
+
+                                                                            <p class="mbm"> Lorem ipsum dolor sit amet,
+                                                                                consectetur adipisicing elit. Fugiat
+                                                                                quaerat repudiandae, itaque tempora
+                                                                                aspernatur quae aperiam fuga dolorum
+                                                                                facilis libero cum, temporibus culpa
+                                                                                veritatis debitis tempore dolore ipsa
+                                                                                odio enim.</p>
+
+                                                                            <p><span>Tag:</span><span
+                                                                                    class="label label-default mls">angular</span><span
+                                                                                    class="label label-default mls">html </span><span
+                                                                                    class="label label-default mls">css3 </span>
+                                                                            </p></li>
+                                                                        <li class="list-group-item"><h4><a href="#"
+                                                                                                           class="mbm">Admin
+                                                                            Bootstrap Template</a></h4>
+
+                                                                            <p class="cat mbs"><a href="#">Html</a> / <a
+                                                                                    href="#">Admin</a></p>
+
+                                                                            <p class="mbm"> Lorem ipsum dolor sit amet,
+                                                                                consectetur adipisicing elit.
+                                                                                Repudiandae atque quidem quas vitae odit
+                                                                                delectus nobis molestias est nam. Iste
+                                                                                ad, consequatur placeat nihil eos
+                                                                                laboriosam voluptates qui fugiat
+                                                                                rem!</p>
+
+                                                                            <p><span>Tag:</span><span
+                                                                                    class="label label-default mls">admin</span><span
+                                                                                    class="label label-default mls">bootstrap</span>
+                                                                            </p></li>
+                                                                        <li class="list-group-item"><h4><a href="#"
+                                                                                                           class="mbm">Admin
+                                                                            Bootstrap Template</a></h4>
+
+                                                                            <p class="cat mbs"><a href="#">Html</a> / <a
+                                                                                    href="#">Admin</a></p>
+
+                                                                            <p class="mbm"> Lorem ipsum dolor sit amet,
+                                                                                consectetur adipisicing elit. Nemo
+                                                                                maiores pariatur harum libero blanditiis
+                                                                                quibusdam nostrum aut, iste quod aliquid
+                                                                                officiis modi suscipit inventore
+                                                                                voluptatem quas quasi impedit debitis!
+                                                                                Maxime?</p>
+
+                                                                            <p><span>Tag:</span><span
+                                                                                    class="label label-default mls">responsive</span><span
+                                                                                    class="label label-default mls">admin</span>
+                                                                            </p></li>
+                                                                        <li class="list-group-item"><h4><a href="#"
+                                                                                                           class="mbm">Admin
+                                                                            Bootstrap Template</a></h4>
+
+                                                                            <p class="cat mbs"><a href="#">Html</a> / <a
+                                                                                    href="#">Admin</a></p>
+
+                                                                            <p class="mbm"> Lorem ipsum dolor sit amet,
+                                                                                consectetur adipisicing elit. A
+                                                                                similique consectetur, fugit non dolor
+                                                                                saepe tenetur hic officia debitis!
+                                                                                Laborum distinctio maxime sapiente a
+                                                                                fuga error assumenda, minima reiciendis
+                                                                                minus?</p>
+
+                                                                            <p><span>Tag:</span><span
+                                                                                    class="label label-default mls">angular</span><span
+                                                                                    class="label label-default mls">html </span><span
+                                                                                    class="label label-default mls">css3</span>
+                                                                            </p></li>
+                                                                        <li class="list-group-item"><h4><a href="#"
+                                                                                                           class="mbm">Admin
+                                                                            Bootstrap Template</a></h4>
+
+                                                                            <p class="cat mbs"><a href="#">Html</a> / <a
+                                                                                    href="#">Admin</a></p>
+
+                                                                            <p class="mbm"> Lorem ipsum dolor sit amet,
+                                                                                consectetur adipisicing elit. Commodi
+                                                                                asperiores, ab ratione voluptatibus. Est
+                                                                                officiis id, rem itaque molestias, hic
+                                                                                veritatis? Expedita excepturi debitis
+                                                                                eius ipsum deleniti libero ab odit!</p>
+
+                                                                            <p><span>Tag:</span><span
+                                                                                    class="label label-default mls">admin</span><span
+                                                                                    class="label label-info mls">bootstrap</span>
+                                                                            </p></li>
+                                                                        <li class="list-group-item"><h4><a href="#"
+                                                                                                           class="mbm">Admin
+                                                                            Bootstrap Template</a></h4>
+
+                                                                            <p class="cat mbs"><a href="#">Html</a> / <a
+                                                                                    href="#">Admin</a></p>
+
+                                                                            <p class="mbm"> Lorem ipsum dolor sit amet,
+                                                                                consectetur adipisicing elit. Doloremque
+                                                                                laborum delectus blanditiis praesentium
+                                                                                eius eveniet ullam aperiam consequatur,
+                                                                                aliquam, accusamus asperiores error,
+                                                                                commodi animi quo debitis sit
+                                                                                repudiandae, est inventore!</p>
+
+                                                                            <p><span>Tag:</span><span
+                                                                                    class="label label-default mls">responsive</span><span
+                                                                                    class="label label-default mls">admin</span>
+                                                                            </p></li>
+                                                                        <li class="list-group-item"><h4><a href="#"
+                                                                                                           class="mbm">Admin
+                                                                            Bootstrap Template</a></h4>
+
+                                                                            <p class="cat mbs"><a href="#">Html</a> / <a
+                                                                                    href="#">Admin</a></p>
+
+                                                                            <p class="mbm"> Lorem ipsum dolor sit amet,
+                                                                                consectetur adipisicing elit. Aliquid,
+                                                                                dolorem accusamus nobis ullam error
+                                                                                eveniet assumenda rerum nam
+                                                                                necessitatibus nostrum eaque, eligendi
+                                                                                reiciendis blanditiis sunt autem quo id
+                                                                                eius deleniti?</p>
+
+                                                                            <p><span>Tag:</span><span
+                                                                                    class="label label-default mls">angular</span><span
+                                                                                    class="label label-default">'.mls html </span><span
+                                                                                    class="label label-default mls">css3</span>
+                                                                            </p></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div id="user" class="tab-pane fade">
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item"><a href="#"
+                                                                                                       class="avatar pull-left mrs"><img
+                                                                                src="http://api.randomuser.me/portraits/men/27.jpg"
+                                                                                class="img-circle"/></a>
+
+                                                                            <div class="info"><h4><a href="#"
+                                                                                                     class="mbm">John
+                                                                                Doe<span class="label label-info mls">Designer</span></a>
+                                                                            </h4>
+
+                                                                                <p class="mbm"> Lorem ipsum dolor sit
+                                                                                    amet, consectetur adipisicing elit.
+                                                                                    Neque aliquam cumque cum itaque qui
+                                                                                    ea tempora pariatur, vero autem
+                                                                                    porro laudantium repellat tempore at
+                                                                                    veritatis, repellendus nobis
+                                                                                    voluptatem quos sequi.</p></div>
+                                                                        </li>
+                                                                        <li class="list-group-item"><a href="#"
+                                                                                                       class="avatar pull-left mrs"><img
+                                                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/uxceo/48.jpg"
+                                                                                class="img-circle"/></a>
+
+                                                                            <div class="info"><h4><a href="#"
+                                                                                                     class="mbm">Uxceo<span
+                                                                                    class="label label-warning mls">Developer</span></a>
+                                                                            </h4>
+
+                                                                                <p class="mbm"> Lorem ipsum dolor sit
+                                                                                    amet, consectetur adipisicing elit.
+                                                                                    Atque minus asperiores, accusantium
+                                                                                    modi, quasi dicta necessitatibus
+                                                                                    labore est, temporibus et
+                                                                                    consectetur quisquam esse nulla
+                                                                                    quaerat veritatis delectus deserunt
+                                                                                    vero. Accusamus!</p></div>
+                                                                        </li>
+                                                                        <li class="list-group-item"><a href="#"
+                                                                                                       class="avatar pull-left mrs"><img
+                                                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/jackmcdade/48.jpg"
+                                                                                class="img-circle"/></a>
+
+                                                                            <div class="info"><h4><a href="#"
+                                                                                                     class="mbm">Jack
+                                                                                Mcdade<span
+                                                                                        class="label label-default mls">User</span></a>
+                                                                            </h4>
+
+                                                                                <p class="mbm"> Lorem ipsum dolor sit
+                                                                                    amet, consectetur adipisicing elit.
+                                                                                    Ipsam, ut? Nostrum aliquid earum
+                                                                                    officiis maiores rerum culpa nisi,
+                                                                                    consectetur fugiat sint a libero
+                                                                                    dolorum fugit dignissimos quidem
+                                                                                    nulla quo magnam?</p></div>
+                                                                        </li>
+                                                                        <li class="list-group-item"><a href="#"
+                                                                                                       class="avatar pull-left mrs"><img
+                                                                                src="https://s3.amazonaws.com/uifaces/faces/twitter/oliveirasimoes/48.jpg"
+                                                                                class="img-circle"/></a>
+
+                                                                            <div class="info"><h4><a href="#"
+                                                                                                     class="mbm">Oliveira
+                                                                                Simoes<span
+                                                                                        class="label label-default mls">Designer</span></a>
+                                                                            </h4>
+
+                                                                                <p class="mbm"> Lorem ipsum dolor sit
+                                                                                    amet, consectetur adipisicing elit.
+                                                                                    Eos nisi minus ab recusandae odio
+                                                                                    impedit unde, minima consequatur
+                                                                                    incidunt non. Expedita iure tempora
+                                                                                    officia est ullam cumque enim et
+                                                                                    autem.</p></div>
+                                                                        </li>
+                                                                        <li class="list-group-item"><a href="#"
+                                                                                                       class="avatar pull-left mrs"><img
+                                                                                src="http://api.randomuser.me/portraits/men/27.jpg"
+                                                                                class="img-circle"/></a>
+
+                                                                            <div class="info"><h4><a href="#"
+                                                                                                     class="mbm">John
+                                                                                Doe<span
+                                                                                        class="label label-default mls">Designer</span></a>
+                                                                            </h4>
+
+                                                                                <p class="mbm"> Lorem ipsum dolor sit
+                                                                                    amet, consectetur adipisicing elit.
+                                                                                    Omnis quisquam incidunt delectus
+                                                                                    quas rem cumque illum ex tenetur
+                                                                                    libero, illo nisi culpa minima
+                                                                                    itaque ipsum autem non? Neque,
+                                                                                    debitis, maiores. </p></div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>       
+                                              
+<!--
                             <div class="col-md-12">
                                 
                                 <div class="row">
@@ -467,10 +678,11 @@
                                         <div class="">
                                             <div class="panel panel-success">
                                                 <div class="panel-heading">
-                                                    <div class="caption">Select Employee</div>
+                                                    <div class="caption">S</div>
                                                 </div>
                                                 <div class="panel-body">
-                                                    
+      
+      
 <div class="row"> 
 <div class="col-md-4">
 
@@ -509,7 +721,7 @@
                                 
                                 
                                 
-                        </div>
+                        </div> -->
                     </div>
                     <!--END CONTENT--></div>
             </div>

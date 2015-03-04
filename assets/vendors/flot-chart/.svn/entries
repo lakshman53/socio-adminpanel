@@ -26,14 +26,14 @@ has-prop-mods
 
 66176daa-0519-b781-f796-ce57b7db7bff
 
-jquery.flot.selection.js
+jquery.flot.categories.js
 file
 
 
 
 add
 
-jquery.flot.categories.js
+jquery.flot.selection.js
 file
 
 
@@ -47,13 +47,6 @@ file
 
 add
 
-jquery.flot.spline.js
-file
-
-
-
-add
-
 jquery.flot.tooltip.js
 file
 
@@ -61,7 +54,7 @@ file
 
 add
 
-jquery.flot.animator.min.js
+jquery.flot.spline.js
 file
 
 
@@ -75,21 +68,14 @@ file
 
 add
 
+jquery.flot.animator.min.js
+file
+
+
+
+add
+
 jquery.flot.crosshair.js
-file
-
-
-
-add
-
-jquery.flot.time.js
-file
-
-
-
-add
-
-jquery.flot.navigate.js
 file
 
 
@@ -103,6 +89,20 @@ file
 
 add
 
+jquery.flot.navigate.js
+file
+
+
+
+add
+
+jquery.flot.time.js
+file
+
+
+
+add
+
 jquery.flot.fillbetween.js
 file
 
@@ -110,7 +110,7 @@ file
 
 add
 
-jquery.flot.resize.js
+jquery.flot.errorbars.js
 file
 
 
@@ -124,7 +124,7 @@ file
 
 add
 
-jquery.flot.errorbars.js
+jquery.flot.resize.js
 file
 
 

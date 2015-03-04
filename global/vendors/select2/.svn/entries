@@ -131,6 +131,20 @@ file
 
 add
 
+select2_locale_ca.js
+file
+
+
+
+add
+
+select2.min.js
+file
+
+
+
+add
+
 select2x2.png
 file
 
@@ -144,20 +158,6 @@ add
 
 has-props
 has-prop-mods
-
-select2.min.js
-file
-
-
-
-add
-
-select2_locale_ca.js
-file
-
-
-
-add
 
 select2_locale_da.js
 file
@@ -180,7 +180,7 @@ file
 
 add
 
-select2_locale_bg.js
+select2_locale_sv.js
 file
 
 
@@ -194,7 +194,7 @@ file
 
 add
 
-select2_locale_sv.js
+select2_locale_bg.js
 file
 
 

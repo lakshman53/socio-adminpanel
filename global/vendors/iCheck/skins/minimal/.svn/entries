@@ -201,7 +201,7 @@ add
 has-props
 has-prop-mods
 
-pink.png
+blue@2x.png
 file
 
 
@@ -215,7 +215,7 @@ add
 has-props
 has-prop-mods
 
-blue@2x.png
+pink.png
 file
 
 
@@ -271,14 +271,14 @@ file
 
 add
 
-orange.css
+yellow.css
 file
 
 
 
 add
 
-yellow.css
+orange.css
 file
 
 
@@ -313,20 +313,6 @@ add
 has-props
 has-prop-mods
 
-orange@2x.png
-file
-
-
-
-add
-
-
-
-
-
-has-props
-has-prop-mods
-
 yellow@2x.png
 file
 
@@ -341,7 +327,7 @@ add
 has-props
 has-prop-mods
 
-aero.png
+orange@2x.png
 file
 
 
@@ -356,6 +342,20 @@ has-props
 has-prop-mods
 
 minimal.png
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+aero.png
 file
 
 

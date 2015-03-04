@@ -117,6 +117,13 @@ file
 
 add
 
+ku.js
+file
+
+
+
+add
+
 uk.js
 file
 
@@ -125,13 +132,6 @@ file
 add
 
 zh-cn.js
-file
-
-
-
-add
-
-ku.js
 file
 
 
@@ -166,14 +166,14 @@ file
 
 add
 
-fr-ca.js
+en-gb.js
 file
 
 
 
 add
 
-en-gb.js
+fr-ca.js
 file
 
 
@@ -201,7 +201,7 @@ file
 
 add
 
-gl.js
+ar.js
 file
 
 
@@ -215,7 +215,7 @@ file
 
 add
 
-ar.js
+gl.js
 file
 
 

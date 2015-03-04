@@ -124,14 +124,14 @@ dir
 
 add
 
-multi-select
+bootstrap-timepicker
 dir
 
 
 
 add
 
-bootstrap-timepicker
+multi-select
 dir
 
 
@@ -166,14 +166,14 @@ dir
 
 add
 
-lightbox
+bootstrap-wysihtml5
 dir
 
 
 
 add
 
-bootstrap-wysihtml5
+lightbox
 dir
 
 
@@ -208,14 +208,14 @@ dir
 
 add
 
-google-code-prettify
+jquery-bootstrap-wizard
 dir
 
 
 
 add
 
-jquery-bootstrap-wizard
+google-code-prettify
 dir
 
 
