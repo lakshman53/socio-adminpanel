@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Central Search</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="apple-touch-icon" href="images/icons/favicon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+    <link type="text/css" rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+    <link type="text/css" rel="stylesheet" href="global/vendors/font-awesome/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="global/vendors/simple-line-icons/simple-line-icons.css">
+    <link type="text/css" rel="stylesheet" href="global/vendors/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="global/vendors/animate.css/animate.css">
+    <link type="text/css" rel="stylesheet" href="global/vendors/iCheck/skins/all.css">
+    <link type="text/css" rel="stylesheet" href="assets/vendors/bootstrap-switch/css/bootstrap-switch.css">
+    <link type="text/css" rel="stylesheet" href="assets/vendors/google-code-prettify/prettify.css">
+    <link type="text/css" rel="stylesheet" href="" id="font-layout">
+    <link type="text/css" rel="stylesheet" href="global/css/core.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/system.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/system-responsive.css">
+</head>
+<body class="sidebar-color-green layout-sidebar-collapsed font-open-sans"><!--Modal Default-->
+<div id="source-modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" class="close">&times;</button>
+                <h4 id="modal-default-label" class="modal-title">View Code</h4></div>
+            <div class="modal-body">
+                <pre class="prettyprint linenums"></pre>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="fluid"><!--BEGIN TEMPLATE SETTING-->
+<!--END TEMPLATE SETTING-->
+    <!--BEGIN TOPBAR-->
+    <div class="page-header-topbar">
+        <nav id="topbar" role="navigation" class="navbar navbar-default container pln prn">
+            <div class="container-fluid pln prn">
+                <div id="topbar-menu" class="navbar-collapse pln prn">
+                    <!--<ul class="nav navbar-nav logo-wrapper">
+                        <li class="btn-menu-toggle">
+                            <div id="menu-toggle" class="show-collapsed"><i class="fa fa-bars"></i></div>
+                        </li>
+                        <li class="pull-left"><a id="logo" href="index.html" class="pan"></a></li>
+                    </ul>-->
+                    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle"><i
+                                class="icon-bell"></i><span
+                                data-pulsate="{parent:true,onClick:border:false,speed:800,reach: 20,delay:5000}"
+                                class="badge badge-success">2</span></a>
+                        </li>
+
+                        <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle"><i
+                                class="icon-user"></i>&nbsp;<span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-user pull-right">
+                                <li>
+                                    <div class="navbar-content">
+                                        <div class="row">
+                                            <div class="col-md-5 col-xs-5"><img
+                                                    src="http://api.randomuser.me/portraits/men/27.jpg" alt=""
+                                                    class="img-responsive img-circle"/>
+
+                                                <p class="text-center mtm"><a href="#" class="change-avatar">
+                                                    <small>Set Avatar</small>
+                                                </a></p>
+                                            </div>
+                                            <div class="col-md-7 col-xs-5"><span>Jake Rochleau</span>
+
+                                                <p class="text-muted small">example@mail.com</p>
+
+                                                <div class="divider"></div>
+                                                <a href="#">
+                                                    <button href="#" class="btn btn-default btn-sm">Edit Profile
+                                                    </button>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                    <div class="navbar-footer">
+                                        <div class="navbar-footer-content">
+                                            <div class="row">
+                                                <div class="col-md-6 col-xs-6"><a href="#">
+                                                    <button class="btn btn-default btn-sm">Change Password</button>
+                                                </a></div>
+                                                <div class="col-md-6 col-xs-6"><a href="#">
+                                                    <button href="page-lock-screen.html"
+                                                            class="btn btn-info btn-sm pull-right">Sign Out
+                                                    </button>
+                                                </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--END TOPBAR-->
+    <div id="wrapper"><!--BEGIN PAGE WRAPPER-->
+        <div id="page-wrapper"><!--BEGIN SIDEBAR MAIN-->
+            <div class="sidebar-main sidebar">
+                <div class="sidebar-collapse sidebar-scroll">
+                    <ul id="sidebar-main" class="nav">
+                        <li class="sidebar-search">
+                            <form action="#" class="form-search">
+                                <div class="input-icon right"><i class="icon-magnifier"></i><input type="text"
+                                                                                                   placeholder="Search..."
+                                                                                                   class="form-control"/>
+                                </div>
+                            </form>
+                        </li>
+                        <li class="sidebar-hide"><h4 class="sidebar-title-section">Main</h4></li>
+                        <li><a href="index.html"><i class="icon-bar-chart"></i><span class="menu-title">Dashboard</span></a>
+                        </li>
+                        <li><a href="page_profile.html"><i class="icon-magnifier"></i><span class="menu-title">Central Search</span></a></li>
+                         <li><a href="#"><i class="icon-plus"></i><span class="menu-title">Master Data</span><span
+                                class="arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li><a href="#"><span
+                                        class="submenu-title">Employee</span></a></li>
+                                <li><a href="form_wizard.html"><span class="submenu-title">Store</span></a></li>
+                                
+                            </ul>
+                        </li>
+                                               
+                                               
+                    </ul>
+                </div>
+            </div>
+            <!--END SIDEBAR MAIN-->
+            <!--BEGIN PAGE CONTENT-->
+            <div class="page-content"><!--BEGIN TITLE & BREADCRUMB PAGE-->
+                <div class="page-title-breadcrumb">
+                    <div class="page-header pull-left">
+                        <div class="page-title">Central Search</div>
+                    </div>
+                    <ol class="breadcrumb page-breadcrumb hidden-xs hidden">
+                        <li><i class="fa fa-home"></i>&nbsp;<a href="index.html">Home</a>&nbsp;&nbsp;<i
+                                class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                        <li><a href="#">UI</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;&nbsp;</li>
+                        <li class="active">Panels</li>
+                    </ol>
+                    <!--<div class="view-code-wrapper pull-right">
+                        <div id="setting-view-code" data-on="success" data-off="default" data-on-label="View"
+                             data-text-label="Code" data-off-label="Off" class="make-switch switch-small"><input
+                                type="checkbox" checked="checked" class="switch"/></div>
+                    </div>-->
+                </div>
+                <!--END TITLE & BREADCRUMB PAGE-->
+                <div class="box-content"><!--BEGIN CONTENT-->
+                    <div class="content">
+                        <div class="row">
+                              <div class="form-group">
+           
+            
+                <div class="col-md-10 col-md-offset-1 input-group">
+    <input type="text" class="form-control input-lg" placeholder="Enter Search String ">
+    <span class="input-group-btn">
+        <button type="button" class="btn btn-success btn-lg">Search</button>
+    </span>
+    
+</div>
+
+
+            
+        </div> 
+        
+        <div class="search-result mtl col-md-10 col-md-offset-1">
+                                                    <div class="row">
+                                                        <div class="tabbable-line">
+                                                            <ul id="myTab" class="nav nav-tabs">
+                                                                <li class="active"><a href="#web"
+                                                                                      data-toggle="tab">Stores</a>
+                                                                </li>
+                                                                <li><a href="#user" data-toggle="tab">Employees</a></li>
+                                                            </ul>
+                                                            <div id="myTabContent" class="tab-content">
+                                                                <div id="web" class="tab-pane fade in active">
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item"><h4><a href="#"
+                                                                                                           class="mbm">Loki
+                                                                            - Admin Bootstrap Template</a></h4>
+
+                                                                            <p class="cat mbs"><a href="#">Html</a> / <a
+                                                                                    href="#">Admin</a> / <a href="#">New
+                                                                                item</a></p>
+
+                                                                            <p class="mbm"> Lorem ipsum dolor sit amet,
+                                                                                consectetur adipisicing elit. Alias hic
+                                                                                optio autem obcaecati asperiores at
+                                                                                vero, atque doloremque veniam quis
+                                                                                voluptatum ipsam nulla incidunt
+                                                                                temporibus fugit possimus expedita
+                                                                                earum! Maxime.</p>
+
+                                                                            <p><span>Tag:</span><span
+                                                                                    class="label label-default mls">admin</span><span
+                                                                                    class="label label-info mls">bootstrap</span>
+                                                                            </p></li>
+                                                                        </ul>
+                                                                </div>
+                                                                <div id="user" class="tab-pane fade">
+                                                                    <ul class="list-group">
+                                                                        <li class="list-group-item"><a href="#"
+                                                                                                       class="avatar pull-left mrs"><img
+                                                                                src="http://api.randomuser.me/portraits/men/27.jpg"
+                                                                                class="img-circle"/></a>
+
+                                                                            <div class="info"><h4><a href="#"
+                                                                                                     class="mbm">John
+                                                                                Doe<span class="label label-info mls">Designer</span></a>
+                                                                            </h4>
+
+                                                                                <p class="mbm"> Lorem ipsum dolor sit
+                                                                                    amet, consectetur adipisicing elit.
+                                                                                    Neque aliquam cumque cum itaque qui
+                                                                                    ea tempora pariatur, vero autem
+                                                                                    porro laudantium repellat tempore at
+                                                                                    veritatis, repellendus nobis
+                                                                                    voluptatem quos sequi.</p></div>
+                                                                        </li>
+                                                                        
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>       
+                                              
+
+                    </div>
+                    <!--END CONTENT--></div>
+            </div>
+            <!--END PAGE CONTENT--></div>
+        <!--END PAGE WRAPPER--></div>
+    <!--BEGIN FOOTER-->
+    <div id="footer">
+        <div class="copyright"> <div class="pull-left"></div>
+        </div>
+    </div>
+    <!--END FOOTER--></div>
+<script src="global/js/jquery-1.10.2.min.js"></script>
+<script src="global/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="global/js/jquery-ui.js"></script>
+<script src="global/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="global/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+<script src="global/js/html5shiv.js"></script>
+<script src="global/js/respond.min.js"></script>
+<script src="global/vendors/metisMenu/jquery.metisMenu.js"></script>
+<script src="global/vendors/slimScroll/jquery.slimscroll.js"></script>
+<script src="global/vendors/iCheck/icheck.min.js"></script>
+<script src="global/vendors/iCheck/custom.min.js"></script>
+<script src="assets/vendors/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<script src="assets/vendors/google-code-prettify/prettify.js"></script>
+<script src="assets/vendors/jquery-cookie/jquery.cookie.js"></script>
+<script src="assets/vendors/jquery.pulsate.js"></script>
+<!--LOADING SCRIPTS FOR PAGE-->
+<script src="assets/js/ui-panels.js"></script>
+<!--CORE JAVASCRIPT-->
+<script src="global/js/core.js"></script>
+<script src="assets/js/system-layout.js"></script>
+<script src="assets/js/jquery-responsive.js"></script>
+<script>jQuery(document).ready(function () {
+    "use strict";
+    JQueryResponsive.init();
+    Layout.init();
+});
+</script>
+<script>jQuery(document).ready(function () {
+    ui_panels.init();
+});
+
+
+</script>
+</body>
+</html>
