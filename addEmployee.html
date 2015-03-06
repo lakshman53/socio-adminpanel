@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><title>Send Messages</title>
+<head><title>Add Employee</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,10 @@
   <link type="text/css" rel="stylesheet" href="global/css/core.css">
   <link type="text/css" rel="stylesheet" href="assets/css/system.css">
   <link type="text/css" rel="stylesheet" href="assets/css/system-responsive.css">
-  <link type="text/css" rel="stylesheet" href="global/vendors/select2/select2-custom.css">
+ 
+    
+    
+    
     
 </head>
 <body class="sidebar-color-green layout-sidebar-collapsed font-open-sans"><!--Modal Default-->
@@ -146,94 +149,65 @@
           <div class="page-content"><!--BEGIN TITLE -->
               <div class="page-title-breadcrumb">
                   <div class="page-header pull-left">
-                      <div class="page-title">Offer Management
+                      <div class="page-title">Add Employee
                       </div>
                   </div>
                  
               </div>
               <!--END TITLE -->
               <div class="box-content"><!--BEGIN CONTENT-->
-              <div class="content">
-                  <div class="col-md-12 col-md-offset-0">
-                  <div class="panel panel-success">
-                      <div class="panel-heading ">
-                      <div class="caption">Compose Offers</div>
-                      <div class="tools">
-                          <ul role="tablist" class="nav nav-tabs">
-                          <li class="active"><a href="#tab_4" data-toggle="tab">Predefined Groups</a></li>
-                          <li><a href="#tab_5" data-toggle="tab">New Group</a></li>
-                        </ul>
-                        </div>
-                    </div>
-                      <div class="panel-body">
-                      <div class="tab-content">
-                          <div id="tab_4" class="tab-pane fade in active"> 
-                          
-                          <div class="col-md-offset-1 col-md-10">
-    <div class="form-group">
-    <select class="form-control">
-    
-        <option>Select Employee Group</option>
-        <option>Group 1</option>
-        <option>Group 2</option>
-        <option>Group 3</option>
-        <option>Group 4</option>
-    </select>
-    <br />
-         <input kl_virtual_keyboard_secure_input="on" id="InputText" placeholder="Offer Subject" class="form-control" type="text">
-	<br />
-   
-<textarea id="message3" name="message3" rows="6" class="form-control" placeholder="Enter offer message"></textarea>
-<br /> <br />
-<button class="col-md-offset-4 btn btn-success btn-outlined">Filter Employees</button>
-<button class="col-md-offset-0 btn btn-success btn-outlined">Send Message</button>
-
-</div>
-</div>
-</div>
- <div id="tab_5" class="tab-pane fade ">
-
-<div class="col-md-offset-0 col-md-3">
-
-<input  class="select2-tagging-support form-control" placeholder="Select Region" type="hidden">
-</div><div class="col-md-offset-0 col-md-3">
-<input  class="select3-tagging-support form-control" placeholder="Select City" >
-</div><div class="col-md-offset-0 col-md-3">
-<input  class="select4-tagging-support form-control" placeholder="Select Area" >
-</div><div class="col-md-offset-0 col-md-3">
-<input  class="select5-tagging-support form-control" placeholder="Select Store" >
-
-</div>
-<br /><br /><br />
-<div class=" col-md-6">
-<input  class="select5-tagging-support form-control" placeholder="Select Product" >
-</div>
-<div class=" col-md-6">
-<input  class="select5-tagging-support form-control" placeholder="Select Employee" >
-</div>
-<br /><br /><br />
-   <div class=" col-md-12 col-md-offset-0">
-         <input kl_virtual_keyboard_secure_input="on" id="InputText" placeholder="Offer Subject" class="form-control" type="text">
-	<br />
-
-<textarea id="message6" name="message6" rows="6" class="form-control" placeholder="Enter offer message"></textarea>
-<br /> <br />
-<button class="col-md-offset-5 btn btn-success btn-outlined">Send</button>
-<button class="col-md-offset-0 btn btn-success btn-outlined">Save & Send</button>
-
-
-
- </div>
-                          
-                          </div>
-                          
-                        </div>
-                    </div>
-                    </div>
+                  <div class="content">
+                   
+  <form action="#" class="form-horizontal form-seperated">
+    <div class="form-body">
+        <div class="form-group has-success">
+            <label for="inputFullName" class="col-md-3 control-label">
+                Full Name
+                <span class="require">*</span>
+            </label>
+            <div class="col-md-9">
+                <div class="input-icon right">
+                    <i class="fa fa-check"></i>
+                    <input id="inputFullName" type="text" placeholder="" class="form-control">
                 </div>
-                </div>
-              <!--END PAGE CONTENT-->
+                <span class="help-block">Yeah, hi John!</span>
             </div>
+        </div>
+        <div class="form-group has-warning">
+            <label for="inputPassword" class="col-md-3 control-label">
+                Password
+                <span class="require">*</span>
+            </label>
+            <div class="col-md-9">
+                <div class="input-icon right">
+                    <i class="fa fa-warning"></i>
+                    <input id="inputPassword" type="password" class="form-control">
+                </div>
+                <span class="help-block">Sorry, wrong password!</span>
+            </div>
+        </div>
+        <div class="form-group has-error">
+            <label for="inputEmail" class="col-md-3 control-label">
+                Email
+                <span class="require">*</span>
+            </label>
+            <div class="col-md-9">
+                <div class="input-icon right">
+                    <i class="fa fa-times"></i>
+                    <input type="text" placeholder="" class="form-control">
+                </div>
+                <span class="help-block">Email is empty!</span>
+            </div>
+        </div>
+    </div>
+    <div class="form-actions text-right pal">
+        <button type="submit" class="btn btn-success">Submit</button>
+        &nbsp;
+        <button type="button" class="btn btn-default">Cancel</button>
+    </div>
+</form></div>
+          
+          <!--END PAGE CONTENT--></div>
       <!--END PAGE WRAPPER--></div>
   <!--BEGIN FOOTER-->
   <div id="footer">
@@ -257,33 +231,6 @@
 <script src="assets/vendors/jquery-cookie/jquery.cookie.js"></script>
 <script src="assets/vendors/jquery.pulsate.js"></script>
 <!--LOADING SCRIPTS FOR PAGE-->
-<!--BEGIN LOADING SCRIPTS FOR PAGE-->
-<script src="assets/vendors/charCount.js"></script>
-<!--END LOADING SCRIPTS FOR PAGE-->
- 
-<!--BEGIN JAVASCRIPT-->
-<script>
-$("#message1, #message2").charCount();
-$("#message3").charCount({
-allowed: 250,
-warning: 20,
-counterText: 'Characters left: '
-});
-</script>
-<script>
-$("#message4, #message5").charCount();
-$("#message6").charCount({
-allowed: 250,
-warning: 20,
-counterText: 'Characters left: '
-});
-</script>
-<script src="global/vendors/select2/select2.min.js"></script>
-<script>
-$(".select2-tagging-support").select2({
-tags:["North", "East", "West", "South", "North-East"]
-});
-</script>
-<!--END JAVASCRIPT-->
+
 </body>
 </html>
