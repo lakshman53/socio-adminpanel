@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>View Message </title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/icons/favicon.ico">
+  <link rel="apple-touch-icon" href="images/icons/favicon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/icons/favicon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/icons/favicon-114x114.png">
+  <link type="text/css" rel="stylesheet"
+        href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700">
+  <link type="text/css" rel="stylesheet" href="global/vendors/font-awesome/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="global/vendors/simple-line-icons/simple-line-icons.css">
+  <link type="text/css" rel="stylesheet" href="global/vendors/bootstrap/css/bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="global/vendors/animate.css/animate.css">
+  <link type="text/css" rel="stylesheet" href="global/vendors/iCheck/skins/all.css">
+  <link type="text/css" rel="stylesheet" href="assets/vendors/bootstrap-switch/css/bootstrap-switch.css">
+  <link type="text/css" rel="stylesheet" href="assets/vendors/google-code-prettify/prettify.css">
+  <link type="text/css" rel="stylesheet" href="" id="font-layout">
+  <link type="text/css" rel="stylesheet" href="global/css/core.css">
+  <link type="text/css" rel="stylesheet" href="assets/css/system.css">
+  <link type="text/css" rel="stylesheet" href="assets/css/system-responsive.css">
+  <link type="text/css" rel="stylesheet" href="global/vendors/select2/select2-custom.css">
+  <link type="text/css" rel="stylesheet" href="assets/vendors/treegrid/css/jquery.treegrid.css">
+    
+</head>
+<body class="sidebar-color-green layout-sidebar-collapsed font-open-sans"><!--Modal Default-->
+<div id="source-modal" class="modal fade">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" data-dismiss="modal" class="close">&times;</button>
+              <h4 id="modal-default-label" class="modal-title">View Code</h4></div>
+          <div class="modal-body">
+              <pre class="prettyprint linenums"></pre>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="fluid"><!--BEGIN TEMPLATE SETTING-->
+<!--END TEMPLATE SETTING-->
+  <!--BEGIN TOPBAR-->
+  <div class="page-header-topbar">
+      <nav id="topbar" role="navigation" class="navbar navbar-default container pln prn">
+          <div class="container-fluid pln prn">
+              <div id="topbar-menu" class="navbar-collapse pln prn">
+                  <!--<ul class="nav navbar-nav logo-wrapper">
+                      <li class="btn-menu-toggle">
+                          <div id="menu-toggle" class="show-collapsed"><i class="fa fa-bars"></i></div>
+                      </li>
+                      <li class="pull-left"><a id="logo" href="index.html" class="pan"></a></li>
+                  </ul>-->
+                  
+                  <ul class="nav navbar-nav navbar-right">
+                     <!-- <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle"><i
+                              class="icon-bell"></i><span
+                              data-pulsate="{parent:true,onClick:border:false,speed:800,reach: 20,delay:5000}"
+                              class="badge badge-success">2</span></a>
+                      </li>-->
+
+                      <li class="dropdown"><a data-toggle="dropdown" href="#" class="dropdown-toggle"><i
+                              class="icon-user"></i>&nbsp;<span class="caret"></span></a>
+                          <ul class="dropdown-menu dropdown-user pull-right">
+                              <li>
+                                  <div class="navbar-content">
+                                      <div class="row">
+                                          <div class="col-md-5 col-xs-5"><img
+                                                  src="http://api.randomuser.me/portraits/men/27.jpg" alt=""
+                                                  class="img-responsive img-circle"/>
+
+                                              <p class="text-center mtm"><a href="#" class="change-avatar">
+                                                  <small>Set Avatar</small>
+                                              </a></p>
+                                          </div>
+                                          <div class="col-md-7 col-xs-5"><span>Jake Rochleau</span>
+
+                                              <p class="text-muted small">example@mail.com</p>
+
+                                              <div class="divider"></div>
+                                              <a href="#">
+                                                  <button href="#" class="btn btn-default btn-sm">Edit Profile
+                                                  </button>
+                                              </a></div>
+                                      </div>
+                                  </div>
+                                  <div class="navbar-footer">
+                                      <div class="navbar-footer-content">
+                                          <div class="row">
+                                              <div class="col-md-6 col-xs-6"><a href="#">
+                                                  <button class="btn btn-default btn-sm">Change Password</button>
+                                              </a></div>
+                                              <div class="col-md-6 col-xs-6"><a href="#">
+                                                  <button href="page-lock-screen.html"
+                                                          class="btn btn-info btn-sm pull-right">Sign Out
+                                                  </button>
+                                              </a></div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </li>
+                          </ul>
+                      </li>
+                      
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </div>
+  <!--END TOPBAR-->
+  
+  <div id="wrapper"><!--BEGIN PAGE WRAPPER-->
+      <div id="page-wrapper"><!--BEGIN SIDEBAR MAIN-->
+          <div class="sidebar-main sidebar">
+              <div class="sidebar-collapse sidebar-scroll">
+                  <ul id="sidebar-main" class="nav">
+                     
+                      <li class="sidebar-hide"><h4 class="sidebar-title-section">Main</h4></li>
+                      <li><a href="home.html"><i class="icon-home"></i><span class="menu-title">Home</span></a>
+                      </li>
+                      <li><a href="centralSearch.html"><i class="icon-magnifier"></i><span class="menu-title">Central Search</span></a></li>
+                       <li><a href="#"><i class="icon-plus"></i><span class="menu-title">Master Data</span><span
+                              class="arrow"></span></a>
+                          <ul class="nav nav-second-level">
+                              <li><a href="addemployee.html"><span  class="submenu-title">Employee</span></a></li>
+                              <li><a href="addstore.html"><span class="submenu-title">Store</span></a></li>
+                              
+                          </ul>
+                      </li>
+                      
+                      <li><a href="#"><i class="icon-note"></i><span class="menu-title">Messages</span><span
+                              class="arrow"></span></a>
+                          <ul class="nav nav-second-level">
+                              <li><a href="sendmessage.html"><span  class="submenu-title">Send Messages</span></a></li>
+                              <li><a href="viewmessage.html"><span class="submenu-title">View Messages</span></a></li>
+                              
+                          </ul>
+                      </li>
+                                             
+                                             
+                  </ul>
+              </div>
+          </div>
+          <!--END SIDEBAR MAIN-->
+          
+          <!--BEGIN PAGE CONTENT-->
+          <div class="page-content"><!--BEGIN TITLE -->
+              <div class="page-title-breadcrumb">
+                  <div class="page-header pull-left">
+                      <div class="page-title">View Sent Offers
+                      </div>
+                  </div>
+                 
+              </div>
+              <!--END TITLE -->
+              <div class="box-content"><!--BEGIN CONTENT-->
+              <div class="content">
+                  
+
+    <!--BEGIN LOADING CSS FOR PAGE-->
+    
+    <!--END LOADING CSS FOR PAGE-->
+     
+    <!--BEGIN HTML-->
+    
+
+    <div class="tabbable-line-wrapper">
+    <div class="tabbable-line">
+    <ul class="nav nav-tabs">
+    <li class="active"><a href="#tab_default_1" data-toggle="tab">Tab 1</a></li>
+    <li><a href="#tab_default_2" data-toggle="tab">Tab 2</a></li>
+    <li><a href="#tab_default_3" data-toggle="tab">Tab 3</a></li>
+    </ul>
+    <div class="tab-content">
+    <div id="tab_default_1" class="tab-pane active">
+     <div class="table-responsive">
+    <table class="tree-projects table table-bordered table-condensed mbn">
+    <thead>
+    <tr>
+    <th>Offers</th>
+    <th width="13%">Employee</th>
+    <th width="10%">Sent</th>
+    <th width="13%">Status</th>
+    <th width="13%">Delivered</th>
+    <th width="10%">Read</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--<tr class="treegrid-1">
+    <td>Project 1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+     
+    <tr class="treegrid-2 treegrid-parent-1">--><tr class="treegrid-1">
+    <td>Store 1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-3 treegrid-parent-1">
+    <td><a href="#" class="text-link">Sed ut perspiciatis unde</a>
+    </td>
+    <td>Corey Smith</td>
+    <td>10 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-4 treegrid-parent-1">
+    <td><a href="#" class="text-link">Omnis iste natus error sit</a>
+    </td>
+    <td>Isabella Allen</td>
+    <td>14 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-6">
+    <td>Store 2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-7 treegrid-parent-6">
+    <td><a href="#" class="text-link">Nemo enim ipsam voluptatem quia voluptas</a></td>
+    <td>Ellie Adams</td>
+    <td>15 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-danger">Urgent</div>
+    </td>
+    </tr>
+    <tr class="treegrid-8 treegrid-parent-6">
+    <td><a href="#" class="text-link">Ullam corporis suscipit laboriosam</a></td>
+    <td>Hannah Davis</td>
+    <td>30 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    
+    <tr class="treegrid-10 ">
+    <td>Store 3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-11 treegrid-parent-10">
+    <td><a href="#" class="text-link">Temporibus autem quibusdam</a>
+    </td>
+    <td>Dylan Reynolds</td>
+    <td>50 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-12 treegrid-parent-10">
+    <td><a href="#" class="text-link">Nam libero tempore, cum soluta nobis</a></td>
+    <td>Ellis Shaw</td>
+    <td>35 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-13 ">
+    <td>Store 4</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-14 treegrid-parent-13">
+    <td><a href="#" class="text-link">At vero eos et accusamus et iusto</a></td>
+    <td>Hannah Graham</td>
+    <td>40 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-danger">Urgent</div>
+    </td>
+    </tr>
+    <tr class="treegrid-15 treegrid-parent-13">
+    <td><a href="#" class="text-link">Itaque earum rerum hic tenetur</a></td>
+    <td>Maddison Baker</td>
+    <td>47 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <div id="tab_default_2" class="tab-pane">
+     <div class="table-responsive">
+    <table class="tree-projects table table-bordered table-condensed mbn">
+    <thead>
+    <tr>
+    <th>Offers</th>
+    <th width="13%">Employee</th>
+    <th width="10%">Sent</th>
+    <th width="13%">Status</th>
+    <th width="13%">Delivered</th>
+    <th width="10%">Read</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--<tr class="treegrid-1">
+    <td>Project 1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+     
+    <tr class="treegrid-2 treegrid-parent-1">--><tr class="treegrid-1">
+    <td>Store 1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-3 treegrid-parent-1">
+    <td><a href="#" class="text-link">Sed ut perspiciatis unde</a>
+    </td>
+    <td>Corey Smith</td>
+    <td>10 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-4 treegrid-parent-1">
+    <td><a href="#" class="text-link">Omnis iste natus error sit</a>
+    </td>
+    <td>Isabella Allen</td>
+    <td>14 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-6">
+    <td>Store 2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-7 treegrid-parent-6">
+    <td><a href="#" class="text-link">Nemo enim ipsam voluptatem quia voluptas</a></td>
+    <td>Ellie Adams</td>
+    <td>15 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-danger">Urgent</div>
+    </td>
+    </tr>
+    <tr class="treegrid-8 treegrid-parent-6">
+    <td><a href="#" class="text-link">Ullam corporis suscipit laboriosam</a></td>
+    <td>Hannah Davis</td>
+    <td>30 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    
+    <tr class="treegrid-10 ">
+    <td>Store 3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-11 treegrid-parent-10">
+    <td><a href="#" class="text-link">Temporibus autem quibusdam</a>
+    </td>
+    <td>Dylan Reynolds</td>
+    <td>50 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-12 treegrid-parent-10">
+    <td><a href="#" class="text-link">Nam libero tempore, cum soluta nobis</a></td>
+    <td>Ellis Shaw</td>
+    <td>35 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-13 ">
+    <td>Store 4</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-14 treegrid-parent-13">
+    <td><a href="#" class="text-link">At vero eos et accusamus et iusto</a></td>
+    <td>Hannah Graham</td>
+    <td>40 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-danger">Urgent</div>
+    </td>
+    </tr>
+    <tr class="treegrid-15 treegrid-parent-13">
+    <td><a href="#" class="text-link">Itaque earum rerum hic tenetur</a></td>
+    <td>Maddison Baker</td>
+    <td>47 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </div>
+    <div id="tab_default_3" class="tab-pane">
+    
+    <p>
+    <div class="table-responsive">
+    <table class="tree-projects table table-bordered table-condensed mbn">
+    <thead>
+    <tr>
+    <th>Offers</th>
+    <th width="13%">Employee</th>
+    <th width="10%">Sent</th>
+    <th width="13%">Status</th>
+    <th width="13%">Delivered</th>
+    <th width="10%">Read</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!--<tr class="treegrid-1">
+    <td>Project 1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+     
+    <tr class="treegrid-2 treegrid-parent-1">--><tr class="treegrid-1">
+    <td>Store 1</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-3 treegrid-parent-1">
+    <td><a href="#" class="text-link">Sed ut perspiciatis unde</a>
+    </td>
+    <td>Corey Smith</td>
+    <td>10 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-4 treegrid-parent-1">
+    <td><a href="#" class="text-link">Omnis iste natus error sit</a>
+    </td>
+    <td>Isabella Allen</td>
+    <td>14 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-6">
+    <td>Store 2</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-7 treegrid-parent-6">
+    <td><a href="#" class="text-link">Nemo enim ipsam voluptatem quia voluptas</a></td>
+    <td>Ellie Adams</td>
+    <td>15 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-danger">Urgent</div>
+    </td>
+    </tr>
+    <tr class="treegrid-8 treegrid-parent-6">
+    <td><a href="#" class="text-link">Ullam corporis suscipit laboriosam</a></td>
+    <td>Hannah Davis</td>
+    <td>30 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    
+    <tr class="treegrid-10 ">
+    <td>Store 3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-11 treegrid-parent-10">
+    <td><a href="#" class="text-link">Temporibus autem quibusdam</a>
+    </td>
+    <td>Dylan Reynolds</td>
+    <td>50 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-12 treegrid-parent-10">
+    <td><a href="#" class="text-link">Nam libero tempore, cum soluta nobis</a></td>
+    <td>Ellis Shaw</td>
+    <td>35 Point</td>
+    <td>
+    <div class="label label-default">Closed</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    <tr class="treegrid-13 ">
+    <td>Store 4</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    </tr>
+    <tr class="treegrid-14 treegrid-parent-13">
+    <td><a href="#" class="text-link">At vero eos et accusamus et iusto</a></td>
+    <td>Hannah Graham</td>
+    <td>40 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-danger">Urgent</div>
+    </td>
+    </tr>
+    <tr class="treegrid-15 treegrid-parent-13">
+    <td><a href="#" class="text-link">Itaque earum rerum hic tenetur</a></td>
+    <td>Maddison Baker</td>
+    <td>47 Point</td>
+    <td>
+    <div class="label label-warning">New</div>
+    </td>
+    <td>03.10.2014</td>
+    <td>
+    <div class="label label-success">Normal</div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    </p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+   
+    <!--END HTML-->
+     
+    <!--BEGIN LOADING SCRIPTS FOR PAGE-->
+    <!--END LOADING SCRIPTS FOR PAGE-->
+     
+    <!--BEGIN JAVASCRIPT-->
+   
+    <!--END JAVASCRIPT-->
+
+
+                </div>
+              <!--END PAGE CONTENT-->
+            </div>
+      <!--END PAGE WRAPPER--></div>
+  <!--BEGIN FOOTER-->
+  <div id="footer">
+      <div class="copyright"> <div class="pull-left"></div>
+      </div>
+  </div>
+  <!--END FOOTER--></div>
+<script src="global/js/jquery-1.10.2.min.js"></script>
+<script src="global/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="global/js/jquery-ui.js"></script>
+<script src="global/vendors/bootstrap/js/bootstrap.min.js"></script>
+<script src="global/vendors/bootstrap-hover-dropdown/bootstrap-hover-dropdown.js"></script>
+<script src="global/js/html5shiv.js"></script>
+<script src="global/js/respond.min.js"></script>
+<script src="global/vendors/metisMenu/jquery.metisMenu.js"></script>
+<script src="global/vendors/slimScroll/jquery.slimscroll.js"></script>
+<script src="global/vendors/iCheck/icheck.min.js"></script>
+<script src="global/vendors/iCheck/custom.min.js"></script>
+<script src="assets/vendors/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+<script src="assets/vendors/google-code-prettify/prettify.js"></script>
+<script src="assets/vendors/jquery-cookie/jquery.cookie.js"></script>
+<script src="assets/vendors/jquery.pulsate.js"></script>
+<!--LOADING SCRIPTS FOR PAGE-->
+<!--BEGIN LOADING SCRIPTS FOR PAGE-->
+<script src="assets/vendors/charCount.js"></script>
+  <script src="assets/vendors/treegrid/js/jquery.treegrid.js"></script>
+    <script src="assets/vendors/treegrid/js/jquery.treegrid.bootstrap3.js"></script>
+  
+<!--END LOADING SCRIPTS FOR PAGE-->
+ 
+<!--BEGIN JAVASCRIPT-->
+<script>
+$("#message1, #message2").charCount();
+$("#message3").charCount({
+allowed: 250,
+warning: 20,
+counterText: 'Characters left: '
+});
+</script>
+<script>
+$("#message4, #message5").charCount();
+$("#message6").charCount({
+allowed: 250,
+warning: 20,
+counterText: 'Characters left: '
+});
+</script>
+<script src="global/vendors/select2/select2.min.js"></script>
+<script>
+$(".select2-tagging-support").select2({
+tags:["North", "East", "West", "South", "North-East"]
+});
+</script>
+ <script>
+    $('.tree-projects').treegrid({
+    expanderExpandedClass: 'fa fa-caret-down',
+    expanderCollapsedClass: 'fa fa-caret-right'
+    });
+    </script>
+<!--END JAVASCRIPT-->
+</body>
+</html>
